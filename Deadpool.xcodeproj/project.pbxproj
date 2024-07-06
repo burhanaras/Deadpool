@@ -41,6 +41,15 @@
 		94D613542C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */; };
 		94D613552C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */; };
 		94D613562C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */; };
+		94D613592C39DD80009DEF00 /* MarvelListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613582C39DD80009DEF00 /* MarvelListScreen.swift */; };
+		94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613582C39DD80009DEF00 /* MarvelListScreen.swift */; };
+		94D6135B2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613582C39DD80009DEF00 /* MarvelListScreen.swift */; };
+		94D6135F2C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */; };
+		94D613602C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */; };
+		94D613612C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */; };
+		94D613632C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
+		94D613642C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
+		94D613652C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +89,9 @@
 		94D6134A2C39DACD009DEF00 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		94D6134E2C39DB31009DEF00 /* NetworkLyer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkLyer+Extension.swift"; sourceTree = "<group>"; };
 		94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyNetworkLayer.swift; sourceTree = "<group>"; };
+		94D613582C39DD80009DEF00 /* MarvelListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListScreen.swift; sourceTree = "<group>"; };
+		94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewModel.swift; sourceTree = "<group>"; };
+		94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MarvelAPI-Keys.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +143,12 @@
 		94D613002C39D51A009DEF00 /* Deadpool */ = {
 			isa = PBXGroup;
 			children = (
-				94D613012C39D51A009DEF00 /* DeadpoolApp.swift */,
+				94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */,
 				94D613032C39D51A009DEF00 /* ContentView.swift */,
+				94D613012C39D51A009DEF00 /* DeadpoolApp.swift */,
 				94D613052C39D51D009DEF00 /* Assets.xcassets */,
 				94D613072C39D51D009DEF00 /* Preview Content */,
+				94D613572C39DD60009DEF00 /* UI */,
 			);
 			path = Deadpool;
 			sourceTree = "<group>";
@@ -235,6 +249,31 @@
 				94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */,
 			);
 			name = DummyNetworkLayer;
+			sourceTree = "<group>";
+		};
+		94D613572C39DD60009DEF00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				94D6135D2C39DDA8009DEF00 /* Mervel Details */,
+				94D6135C2C39DD8B009DEF00 /* Marvel List */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		94D6135C2C39DD8B009DEF00 /* Marvel List */ = {
+			isa = PBXGroup;
+			children = (
+				94D613582C39DD80009DEF00 /* MarvelListScreen.swift */,
+				94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */,
+			);
+			path = "Marvel List";
+			sourceTree = "<group>";
+		};
+		94D6135D2C39DDA8009DEF00 /* Mervel Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Mervel Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613632C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */,
 				94D613092C39D51D009DEF00 /* Preview Assets.xcassets in Resources */,
 				94D613062C39D51D009DEF00 /* Assets.xcassets in Resources */,
 			);
@@ -350,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613642C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613652C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,8 +411,10 @@
 			files = (
 				94D6134B2C39DACD009DEF00 /* NetworkLayer.swift in Sources */,
 				94D613462C39DA1C009DEF00 /* DummyData.swift in Sources */,
+				94D6135F2C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 				94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613412C39D9F3009DEF00 /* CommonError.swift in Sources */,
+				94D613592C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D6134F2C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
 				94D6132F2C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
@@ -392,9 +436,11 @@
 				94D6134C2C39DACD009DEF00 /* NetworkLayer.swift in Sources */,
 				94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */,
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
+				94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613502C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
 				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613552C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
+				94D613602C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,8 +450,10 @@
 			files = (
 				94D6134D2C39DACD009DEF00 /* NetworkLayer.swift in Sources */,
 				94D613482C39DA1C009DEF00 /* DummyData.swift in Sources */,
+				94D613612C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 				94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613432C39D9F3009DEF00 /* CommonError.swift in Sources */,
+				94D6135B2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613512C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
 				94D613312C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,

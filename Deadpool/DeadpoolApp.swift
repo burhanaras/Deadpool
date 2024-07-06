@@ -11,7 +11,7 @@ import SwiftUI
 struct DeadpoolApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MarvelListScreen(viewModel: MarvelListViewModel())
         }
     }
 }
