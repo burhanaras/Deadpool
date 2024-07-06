@@ -14,6 +14,18 @@
 		94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613122C39D51D009DEF00 /* DeadpoolTests.swift */; };
 		94D6131D2C39D51D009DEF00 /* DeadpoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6131C2C39D51D009DEF00 /* DeadpoolUITests.swift */; };
 		94D6131F2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6131E2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift */; };
+		94D6132F2C39D779009DEF00 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6132E2C39D778009DEF00 /* Marvel.swift */; };
+		94D613302C39D779009DEF00 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6132E2C39D778009DEF00 /* Marvel.swift */; };
+		94D613312C39D779009DEF00 /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6132E2C39D778009DEF00 /* Marvel.swift */; };
+		94D613332C39D7BB009DEF00 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613322C39D7BB009DEF00 /* Comics.swift */; };
+		94D613342C39D7BB009DEF00 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613322C39D7BB009DEF00 /* Comics.swift */; };
+		94D613352C39D7BB009DEF00 /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613322C39D7BB009DEF00 /* Comics.swift */; };
+		94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613372C39D7E6009DEF00 /* ComicsResponse.swift */; };
+		94D613392C39D7E6009DEF00 /* ComicsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613372C39D7E6009DEF00 /* ComicsResponse.swift */; };
+		94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613372C39D7E6009DEF00 /* ComicsResponse.swift */; };
+		94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
+		94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
+		94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,10 @@
 		94D613182C39D51D009DEF00 /* DeadpoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeadpoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D6131C2C39D51D009DEF00 /* DeadpoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadpoolUITests.swift; sourceTree = "<group>"; };
 		94D6131E2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadpoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94D6132E2C39D778009DEF00 /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
+		94D613322C39D7BB009DEF00 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		94D613372C39D7E6009DEF00 /* ComicsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsResponse.swift; sourceTree = "<group>"; };
+		94D6133B2C39D804009DEF00 /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				94D613002C39D51A009DEF00 /* Deadpool */,
+				94D6132B2C39D6F8009DEF00 /* DeadpoolShared */,
 				94D613112C39D51D009DEF00 /* DeadpoolTests */,
 				94D6131B2C39D51D009DEF00 /* DeadpoolUITests */,
 				94D612FF2C39D51A009DEF00 /* Products */,
@@ -125,6 +142,50 @@
 				94D6131E2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift */,
 			);
 			path = DeadpoolUITests;
+			sourceTree = "<group>";
+		};
+		94D6132B2C39D6F8009DEF00 /* DeadpoolShared */ = {
+			isa = PBXGroup;
+			children = (
+				94D6133F2C39D825009DEF00 /* Model */,
+				94D6132C2C39D74C009DEF00 /* Network */,
+			);
+			path = DeadpoolShared;
+			sourceTree = "<group>";
+		};
+		94D6132C2C39D74C009DEF00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		94D6132D2C39D752009DEF00 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				94D6132E2C39D778009DEF00 /* Marvel.swift */,
+				94D613322C39D7BB009DEF00 /* Comics.swift */,
+			);
+			path = "Model Objects";
+			sourceTree = "<group>";
+		};
+		94D613362C39D7DB009DEF00 /* Data Transfer Objects */ = {
+			isa = PBXGroup;
+			children = (
+				94D613372C39D7E6009DEF00 /* ComicsResponse.swift */,
+				94D6133B2C39D804009DEF00 /* CharactersResponse.swift */,
+			);
+			name = "Data Transfer Objects";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		94D6133F2C39D825009DEF00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94D613362C39D7DB009DEF00 /* Data Transfer Objects */,
+				94D6132D2C39D752009DEF00 /* Model Objects */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
+				94D6132F2C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613332C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613042C39D51A009DEF00 /* ContentView.swift in Sources */,
 				94D613022C39D51A009DEF00 /* DeadpoolApp.swift in Sources */,
 			);
@@ -266,7 +331,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613392C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613302C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */,
+				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
+				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
+				94D613312C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613352C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6131F2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift in Sources */,
 				94D6131D2C39D51D009DEF00 /* DeadpoolUITests.swift in Sources */,
 			);
