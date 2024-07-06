@@ -26,6 +26,12 @@
 		94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
 		94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
 		94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6133B2C39D804009DEF00 /* CharactersResponse.swift */; };
+		94D613412C39D9F3009DEF00 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613402C39D9F3009DEF00 /* CommonError.swift */; };
+		94D613422C39D9F3009DEF00 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613402C39D9F3009DEF00 /* CommonError.swift */; };
+		94D613432C39D9F3009DEF00 /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613402C39D9F3009DEF00 /* CommonError.swift */; };
+		94D613462C39DA1C009DEF00 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613452C39DA1C009DEF00 /* DummyData.swift */; };
+		94D613472C39DA1C009DEF00 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613452C39DA1C009DEF00 /* DummyData.swift */; };
+		94D613482C39DA1C009DEF00 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613452C39DA1C009DEF00 /* DummyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +66,8 @@
 		94D613322C39D7BB009DEF00 /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
 		94D613372C39D7E6009DEF00 /* ComicsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsResponse.swift; sourceTree = "<group>"; };
 		94D6133B2C39D804009DEF00 /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
+		94D613402C39D9F3009DEF00 /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		94D613452C39DA1C009DEF00 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,8 @@
 		94D6132C2C39D74C009DEF00 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				94D613492C39DA34009DEF00 /* Error */,
+				94D613442C39DA09009DEF00 /* DummyData */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -186,6 +196,22 @@
 				94D6132D2C39D752009DEF00 /* Model Objects */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		94D613442C39DA09009DEF00 /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				94D613452C39DA1C009DEF00 /* DummyData.swift */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		94D613492C39DA34009DEF00 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				94D613402C39D9F3009DEF00 /* CommonError.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613462C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
+				94D613412C39D9F3009DEF00 /* CommonError.swift in Sources */,
 				94D6132F2C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
 				94D613332C39D7BB009DEF00 /* Comics.swift in Sources */,
@@ -332,7 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94D613392C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613422C39D9F3009DEF00 /* CommonError.swift in Sources */,
 				94D613302C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D613472C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */,
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
@@ -343,7 +373,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D613482C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
+				94D613432C39D9F3009DEF00 /* CommonError.swift in Sources */,
 				94D613312C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
 				94D613352C39D7BB009DEF00 /* Comics.swift in Sources */,
