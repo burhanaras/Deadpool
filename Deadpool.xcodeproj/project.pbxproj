@@ -50,6 +50,12 @@
 		94D613632C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
 		94D613642C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
 		94D613652C39DFEA009DEF00 /* MarvelAPI-Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */; };
+		94D613682C3A184B009DEF00 /* MarvelItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613672C3A184B009DEF00 /* MarvelItemView.swift */; };
+		94D613692C3A184B009DEF00 /* MarvelItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613672C3A184B009DEF00 /* MarvelItemView.swift */; };
+		94D6136A2C3A184B009DEF00 /* MarvelItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613672C3A184B009DEF00 /* MarvelItemView.swift */; };
+		94D6136C2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */; };
+		94D6136D2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */; };
+		94D6136E2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +98,8 @@
 		94D613582C39DD80009DEF00 /* MarvelListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListScreen.swift; sourceTree = "<group>"; };
 		94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewModel.swift; sourceTree = "<group>"; };
 		94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MarvelAPI-Keys.plist"; sourceTree = "<group>"; };
+		94D613672C3A184B009DEF00 /* MarvelItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelItemView.swift; sourceTree = "<group>"; };
+		94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,7 @@
 				94D613052C39D51D009DEF00 /* Assets.xcassets */,
 				94D613072C39D51D009DEF00 /* Preview Content */,
 				94D613572C39DD60009DEF00 /* UI */,
+				94D613662C3A17A0009DEF00 /* Views */,
 			);
 			path = Deadpool;
 			sourceTree = "<group>";
@@ -274,6 +283,15 @@
 			children = (
 			);
 			name = "Mervel Details";
+			sourceTree = "<group>";
+		};
+		94D613662C3A17A0009DEF00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94D613672C3A184B009DEF00 /* MarvelItemView.swift */,
+				94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,10 +435,12 @@
 				94D613592C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D6134F2C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
 				94D6132F2C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D613682C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
 				94D613542C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
 				94D613332C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613042C39D51A009DEF00 /* ContentView.swift in Sources */,
+				94D6136C2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
 				94D613022C39D51A009DEF00 /* DeadpoolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +458,9 @@
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613502C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
+				94D613692C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
+				94D6136D2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
 				94D613552C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
 				94D613602C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 			);
@@ -456,10 +478,12 @@
 				94D6135B2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613512C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
 				94D613312C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D6136A2C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
 				94D613562C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
 				94D613352C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6131F2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift in Sources */,
+				94D6136E2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
 				94D6131D2C39D51D009DEF00 /* DeadpoolUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
