@@ -19,9 +19,9 @@ struct MarvelListScreen: View {
             switch viewModel.data{
             case let .success(marvels): MarvelList(viewModel: viewModel, marvels: marvels)
             case let .failure(error):
-               Text("ErrorView(error: error)")
+                Text("\(error.localizedDescription)")
             case .none:
-               Text("LoadingView()")
+               ProgressView()
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())

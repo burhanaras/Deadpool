@@ -45,9 +45,15 @@ class DummyData {
     static func comicDTOs(count: Int) -> [ComicDTO] {
         var data = [ComicDTO]()
         (0..<count).forEach{ index in
-            let comicDTO = ComicDTO(id: index, title: "Comic \(index)", thumbnail: ThumbnailDTO(path: "https://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784", ext: "jpg"))
+            let comicDTO = ComicDTO(id: index, title: "Comic \(index)", thumbnail: ThumbnailDTO(path: "http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a", ext: "jpg"))
             data.append(comicDTO)
         }
         return data
+    }
+    
+    static func comics(count: Int) -> [Comics] {
+        return (0..<count).map {
+            Comics(id: $0, title: "Comics \($0)", image: URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/2/00/5ba3bfcc55f5a.jpg")!)
+        }
     }
 }

@@ -12,6 +12,7 @@ struct DeadpoolApp: App {
     var body: some Scene {
         WindowGroup {
             MarvelListScreen(viewModel: MarvelListViewModel())
+                .background(.black)
         }
     }
 }
