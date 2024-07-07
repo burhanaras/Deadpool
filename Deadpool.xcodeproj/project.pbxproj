@@ -71,6 +71,10 @@
 		94D613842C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
 		94D613852C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
 		94D613862C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
+		94D6138C2C3B1E91009DEF00 /* MarvelListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138B2C3B1E91009DEF00 /* MarvelListViewModelTests.swift */; };
+		94D6138F2C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
+		94D613902C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
+		94D613912C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,8 @@
 		94D613772C3A5E7E009DEF00 /* ComicsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsItemView.swift; sourceTree = "<group>"; };
 		94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsCarouselView.swift; sourceTree = "<group>"; };
 		94D613832C3A77CC009DEF00 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		94D6138B2C3B1E91009DEF00 /* MarvelListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewModelTests.swift; sourceTree = "<group>"; };
+		94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				94D613122C39D51D009DEF00 /* DeadpoolTests.swift */,
+				94D613922C3B25F7009DEF00 /* Marvel List */,
+				94D6138D2C3B25B2009DEF00 /* Mock */,
 			);
 			path = DeadpoolTests;
 			sourceTree = "<group>";
@@ -351,6 +359,22 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		94D6138D2C3B25B2009DEF00 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
+		94D613922C3B25F7009DEF00 /* Marvel List */ = {
+			isa = PBXGroup;
+			children = (
+				94D6138B2C3B1E91009DEF00 /* MarvelListViewModelTests.swift */,
+			);
+			path = "Marvel List";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,6 +513,7 @@
 				94D6135F2C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 				94D6133C2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613412C39D9F3009DEF00 /* CommonError.swift in Sources */,
+				94D6138F2C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */,
 				94D613782C3A5E7E009DEF00 /* ComicsItemView.swift in Sources */,
 				94D613592C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D6134F2C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
@@ -516,12 +541,14 @@
 				94D613302C39D779009DEF00 /* Marvel.swift in Sources */,
 				94D613472C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D6137D2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */,
+				94D613902C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */,
 				94D6134C2C39DACD009DEF00 /* NetworkLayer.swift in Sources */,
 				94D613852C3A77CC009DEF00 /* Coordinator.swift in Sources */,
 				94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */,
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613502C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
+				94D6138C2C3B1E91009DEF00 /* MarvelListViewModelTests.swift in Sources */,
 				94D613792C3A5E7E009DEF00 /* ComicsItemView.swift in Sources */,
 				94D613692C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
@@ -542,6 +569,7 @@
 				94D613612C39DDCD009DEF00 /* MarvelListViewModel.swift in Sources */,
 				94D6133E2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613432C39D9F3009DEF00 /* CommonError.swift in Sources */,
+				94D613912C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */,
 				94D6137A2C3A5E7E009DEF00 /* ComicsItemView.swift in Sources */,
 				94D6135B2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613512C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
