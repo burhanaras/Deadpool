@@ -25,7 +25,7 @@ struct MarvelCarouselView: View {
                 LazyHStack(spacing: 32) {
                     ForEach(marvels) { marvel in
                         NavigationLink {
-                            MarvelDetailScreen(viewModel: MarvelDetailViewModel(networkLayer: NetworkLayer(), marvel: marvel))
+                            Coordinator.shared.navigateToDetail(marvel: marvel)
                         } label: {
                             MarvelItemView(marvel: marvel)
                                 .frame(width: 420, height: 420)

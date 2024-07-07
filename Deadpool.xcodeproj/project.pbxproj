@@ -68,6 +68,9 @@
 		94D6137C2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */; };
 		94D6137D2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */; };
 		94D6137E2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */; };
+		94D613842C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
+		94D613852C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
+		94D613862C3A77CC009DEF00 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613832C3A77CC009DEF00 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,7 @@
 		94D613732C3A5C66009DEF00 /* MarvelDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailScreen.swift; sourceTree = "<group>"; };
 		94D613772C3A5E7E009DEF00 /* ComicsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsItemView.swift; sourceTree = "<group>"; };
 		94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsCarouselView.swift; sourceTree = "<group>"; };
+		94D613832C3A77CC009DEF00 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 			children = (
 				94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */,
 				94D613802C3A7715009DEF00 /* App */,
+				94D613822C3A77BC009DEF00 /* Coordinator */,
 				94D613072C39D51D009DEF00 /* Preview Content */,
 				94D613812C3A7721009DEF00 /* Resources */,
 				94D613572C39DD60009DEF00 /* UI */,
@@ -338,6 +343,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		94D613822C3A77BC009DEF00 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				94D613832C3A77CC009DEF00 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +496,7 @@
 				94D613682C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D6137C2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */,
 				94D613382C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613842C3A77CC009DEF00 /* Coordinator.swift in Sources */,
 				94D613542C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
 				94D613332C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613742C3A5C66009DEF00 /* MarvelDetailScreen.swift in Sources */,
@@ -503,6 +517,7 @@
 				94D613472C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D6137D2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */,
 				94D6134C2C39DACD009DEF00 /* NetworkLayer.swift in Sources */,
+				94D613852C3A77CC009DEF00 /* Coordinator.swift in Sources */,
 				94D613132C39D51D009DEF00 /* DeadpoolTests.swift in Sources */,
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
@@ -534,6 +549,7 @@
 				94D6136A2C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
 				94D6137E2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */,
 				94D6133A2C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
+				94D613862C3A77CC009DEF00 /* Coordinator.swift in Sources */,
 				94D613562C39DC33009DEF00 /* DummyNetworkLayer.swift in Sources */,
 				94D613352C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613762C3A5C66009DEF00 /* MarvelDetailScreen.swift in Sources */,
