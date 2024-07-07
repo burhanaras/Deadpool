@@ -76,6 +76,7 @@
 		94D613902C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
 		94D613912C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
 		94D613952C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */; };
+		94D613982C3B4D94009DEF00 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613972C3B4D94009DEF00 /* MarvelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		94D6138B2C3B1E91009DEF00 /* MarvelListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelListViewModelTests.swift; sourceTree = "<group>"; };
 		94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkLayer.swift; sourceTree = "<group>"; };
 		94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailViewModelTests.swift; sourceTree = "<group>"; };
+		94D613972C3B4D94009DEF00 /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		94D613112C39D51D009DEF00 /* DeadpoolTests */ = {
 			isa = PBXGroup;
 			children = (
+				94D613962C3B4D7F009DEF00 /* Model */,
 				94D613932C3B269F009DEF00 /* Marvel Detail */,
 				94D613122C39D51D009DEF00 /* DeadpoolTests.swift */,
 				94D613922C3B25F7009DEF00 /* Marvel List */,
@@ -386,6 +389,14 @@
 			name = "Marvel Detail";
 			sourceTree = "<group>";
 		};
+		94D613962C3B4D7F009DEF00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94D613972C3B4D94009DEF00 /* MarvelTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -563,6 +574,7 @@
 				94D6138C2C3B1E91009DEF00 /* MarvelListViewModelTests.swift in Sources */,
 				94D613792C3A5E7E009DEF00 /* ComicsItemView.swift in Sources */,
 				94D613692C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
+				94D613982C3B4D94009DEF00 /* MarvelTests.swift in Sources */,
 				94D6133D2C39D804009DEF00 /* CharactersResponse.swift in Sources */,
 				94D613712C3A5C0D009DEF00 /* MarvelDetailViewModel.swift in Sources */,
 				94D6136D2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
