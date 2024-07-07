@@ -13,15 +13,18 @@ class MockNetworkLayer: INetworkLayer {
     private var comicsResponse: ComicsResponse?
     private var shouldReturnError: Bool
     private var shouldReturnConfigurationError: Bool
+    private var responseDelay: TimeInterval?
     
     init(charactersResponse: CharactersResponse? = nil,
          comicsResponse: ComicsResponse? = nil,
          shouldReturnError: Bool = false,
-         shouldReturnConfigurationError: Bool = false) {
+         shouldReturnConfigurationError: Bool = false,
+         responseDelay: TimeInterval? = nil) {
         self.charactersResponse = charactersResponse
         self.comicsResponse = comicsResponse
         self.shouldReturnError = shouldReturnError
         self.shouldReturnConfigurationError = shouldReturnConfigurationError
+        self.responseDelay = responseDelay
     }
     
     var baseURL: NSString { return "" as NSString }
@@ -33,11 +36,21 @@ class MockNetworkLayer: INetworkLayer {
         if shouldReturnConfigurationError {
             return Fail(error: RequestError.malformedUrlError).eraseToAnyPublisher()
         }
+        
         if let response = charactersResponse {
-            return Just(response)
-                .setFailureType(to: RequestError.self)
-                .eraseToAnyPublisher()
+            if let delay = responseDelay, delay > 0 {
+                return Future { promise in
+                    DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                        promise(.success(response))
+                    }
+                }.eraseToAnyPublisher()
+            } else {
+                return Just(response)
+                    .setFailureType(to: RequestError.self)
+                    .eraseToAnyPublisher()
+            }
         }
+        
         return Fail(error: RequestError.networkError).eraseToAnyPublisher()
     }
     
@@ -48,11 +61,21 @@ class MockNetworkLayer: INetworkLayer {
         if shouldReturnConfigurationError {
             return Fail(error: RequestError.malformedUrlError).eraseToAnyPublisher()
         }
+        
         if let response = comicsResponse {
-            return Just(response)
-                .setFailureType(to: RequestError.self)
-                .eraseToAnyPublisher()
+            if let delay = responseDelay, delay > 0 {
+                return Future { promise in
+                    DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                        promise(.success(response))
+                    }
+                }.eraseToAnyPublisher()
+            } else {
+                return Just(response)
+                    .setFailureType(to: RequestError.self)
+                    .eraseToAnyPublisher()
+            }
         }
+        
         return Fail(error: RequestError.networkError).eraseToAnyPublisher()
     }
 }
