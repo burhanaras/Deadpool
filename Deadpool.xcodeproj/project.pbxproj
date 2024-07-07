@@ -77,6 +77,7 @@
 		94D613912C3B25BF009DEF00 /* MockNetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */; };
 		94D613952C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */; };
 		94D613982C3B4D94009DEF00 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613972C3B4D94009DEF00 /* MarvelTests.swift */; };
+		94D6139A2C3B4E9D009DEF00 /* ComicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613992C3B4E9D009DEF00 /* ComicsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkLayer.swift; sourceTree = "<group>"; };
 		94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailViewModelTests.swift; sourceTree = "<group>"; };
 		94D613972C3B4D94009DEF00 /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
+		94D613992C3B4E9D009DEF00 /* ComicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				94D613972C3B4D94009DEF00 /* MarvelTests.swift */,
+				94D613992C3B4E9D009DEF00 /* ComicsTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				94D613342C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D6135A2C39DD80009DEF00 /* MarvelListScreen.swift in Sources */,
 				94D613502C39DB31009DEF00 /* NetworkLyer+Extension.swift in Sources */,
+				94D6139A2C3B4E9D009DEF00 /* ComicsTests.swift in Sources */,
 				94D6138C2C3B1E91009DEF00 /* MarvelListViewModelTests.swift in Sources */,
 				94D613792C3A5E7E009DEF00 /* ComicsItemView.swift in Sources */,
 				94D613692C3A184B009DEF00 /* MarvelItemView.swift in Sources */,
