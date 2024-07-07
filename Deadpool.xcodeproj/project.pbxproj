@@ -168,10 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				94D613622C39DFEA009DEF00 /* MarvelAPI-Keys.plist */,
-				94D613032C39D51A009DEF00 /* ContentView.swift */,
-				94D613012C39D51A009DEF00 /* DeadpoolApp.swift */,
-				94D613052C39D51D009DEF00 /* Assets.xcassets */,
+				94D613802C3A7715009DEF00 /* App */,
 				94D613072C39D51D009DEF00 /* Preview Content */,
+				94D613812C3A7721009DEF00 /* Resources */,
 				94D613572C39DD60009DEF00 /* UI */,
 				94D613662C3A17A0009DEF00 /* Views */,
 			);
@@ -279,6 +278,7 @@
 		94D613572C39DD60009DEF00 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				94D6137F2C3A76E6009DEF00 /* Home */,
 				94D6135C2C39DD8B009DEF00 /* Marvel List */,
 				94D6135D2C39DDA8009DEF00 /* Mervel Details */,
 			);
@@ -312,6 +312,30 @@
 				94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		94D6137F2C3A76E6009DEF00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94D613032C39D51A009DEF00 /* ContentView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		94D613802C3A7715009DEF00 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				94D613012C39D51A009DEF00 /* DeadpoolApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		94D613812C3A7721009DEF00 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94D613052C39D51D009DEF00 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
