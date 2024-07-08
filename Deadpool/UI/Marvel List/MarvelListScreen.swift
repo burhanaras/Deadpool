@@ -16,7 +16,7 @@ struct MarvelListScreen: View {
     }
     var body: some View {
         NavigationView{
-            switch viewModel.data{
+            switch viewModel.data {
             case let .success(marvels): MarvelList(viewModel: viewModel, marvels: marvels)
             case let .failure(error):
                 Text("\(error.localizedDescription)")
