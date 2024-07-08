@@ -9,7 +9,7 @@
 import XCTest
 import Combine
 
-class MarvelListViewModelTests: XCTestCase {
+final class MarvelListViewModelTests: XCTestCase {
     
     var cancellables: Set<AnyCancellable> = []
     

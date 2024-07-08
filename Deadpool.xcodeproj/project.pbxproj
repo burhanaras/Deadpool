@@ -78,6 +78,9 @@
 		94D613952C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */; };
 		94D613982C3B4D94009DEF00 /* MarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613972C3B4D94009DEF00 /* MarvelTests.swift */; };
 		94D6139A2C3B4E9D009DEF00 /* ComicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D613992C3B4E9D009DEF00 /* ComicsTests.swift */; };
+		94D6139C2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */; };
+		94D6139D2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */; };
+		94D6139E2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +135,7 @@
 		94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDetailViewModelTests.swift; sourceTree = "<group>"; };
 		94D613972C3B4D94009DEF00 /* MarvelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelTests.swift; sourceTree = "<group>"; };
 		94D613992C3B4E9D009DEF00 /* ComicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsTests.swift; sourceTree = "<group>"; };
+		94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDataGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,11 +209,11 @@
 		94D613112C39D51D009DEF00 /* DeadpoolTests */ = {
 			isa = PBXGroup;
 			children = (
-				94D613962C3B4D7F009DEF00 /* Model */,
-				94D613932C3B269F009DEF00 /* Marvel Detail */,
 				94D613122C39D51D009DEF00 /* DeadpoolTests.swift */,
+				94D613932C3B269F009DEF00 /* Marvel Detail */,
 				94D613922C3B25F7009DEF00 /* Marvel List */,
 				94D6138D2C3B25B2009DEF00 /* Mock */,
+				94D613962C3B4D7F009DEF00 /* Model */,
 			);
 			path = DeadpoolTests;
 			sourceTree = "<group>";
@@ -371,6 +375,7 @@
 			isa = PBXGroup;
 			children = (
 				94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */,
+				94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */,
 			);
 			name = Mock;
 			sourceTree = "<group>";
@@ -551,6 +556,7 @@
 				94D613332C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613742C3A5C66009DEF00 /* MarvelDetailScreen.swift in Sources */,
 				94D613702C3A5C0D009DEF00 /* MarvelDetailViewModel.swift in Sources */,
+				94D6139C2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */,
 				94D613042C39D51A009DEF00 /* ContentView.swift in Sources */,
 				94D6136C2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
 				94D613022C39D51A009DEF00 /* DeadpoolApp.swift in Sources */,
@@ -564,6 +570,7 @@
 				94D613392C39D7E6009DEF00 /* ComicsResponse.swift in Sources */,
 				94D613422C39D9F3009DEF00 /* CommonError.swift in Sources */,
 				94D613302C39D779009DEF00 /* Marvel.swift in Sources */,
+				94D6139D2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */,
 				94D613472C39DA1C009DEF00 /* DummyData.swift in Sources */,
 				94D613952C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift in Sources */,
 				94D6137D2C3A6284009DEF00 /* ComicsCarouselView.swift in Sources */,
@@ -610,6 +617,7 @@
 				94D613352C39D7BB009DEF00 /* Comics.swift in Sources */,
 				94D613762C3A5C66009DEF00 /* MarvelDetailScreen.swift in Sources */,
 				94D613722C3A5C0D009DEF00 /* MarvelDetailViewModel.swift in Sources */,
+				94D6139E2C3B98E7009DEF00 /* DummyDataGenerator.swift in Sources */,
 				94D6131F2C39D51D009DEF00 /* DeadpoolUITestsLaunchTests.swift in Sources */,
 				94D6136E2C3A1955009DEF00 /* MarvelCarouselView.swift in Sources */,
 				94D6131D2C39D51D009DEF00 /* DeadpoolUITests.swift in Sources */,

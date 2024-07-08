@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            MarvelListScreen()
+            Coordinator.shared.marvelList()
                 .edgesIgnoringSafeArea(.horizontal)
                 .tabItem {
                     Label("Charcters", systemImage: "newspaper")

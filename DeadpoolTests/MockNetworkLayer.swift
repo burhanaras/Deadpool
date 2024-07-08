@@ -37,21 +37,19 @@ class MockNetworkLayer: INetworkLayer {
             return Fail(error: RequestError.malformedUrlError).eraseToAnyPublisher()
         }
         
-        if let response = charactersResponse {
-            if let delay = responseDelay, delay > 0 {
-                return Future { promise in
-                    DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
-                        promise(.success(response))
-                    }
-                }.eraseToAnyPublisher()
-            } else {
-                return Just(response)
-                    .setFailureType(to: RequestError.self)
-                    .eraseToAnyPublisher()
-            }
-        }
+        let response = charactersResponse ?? DummyDataGenerator.generateCharactersResponse(start: start, number: number)
         
-        return Fail(error: RequestError.networkError).eraseToAnyPublisher()
+        if let delay = responseDelay, delay > 0 {
+            return Future { promise in
+                DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                    promise(.success(response))
+                }
+            }.eraseToAnyPublisher()
+        } else {
+            return Just(response)
+                .setFailureType(to: RequestError.self)
+                .eraseToAnyPublisher()
+        }
     }
     
     func getComicsOf(characterId: String) -> AnyPublisher<ComicsResponse, RequestError> {
@@ -62,20 +60,18 @@ class MockNetworkLayer: INetworkLayer {
             return Fail(error: RequestError.malformedUrlError).eraseToAnyPublisher()
         }
         
-        if let response = comicsResponse {
-            if let delay = responseDelay, delay > 0 {
-                return Future { promise in
-                    DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
-                        promise(.success(response))
-                    }
-                }.eraseToAnyPublisher()
-            } else {
-                return Just(response)
-                    .setFailureType(to: RequestError.self)
-                    .eraseToAnyPublisher()
-            }
-        }
+        let response = comicsResponse ?? DummyDataGenerator.generateComicsResponse()
         
-        return Fail(error: RequestError.networkError).eraseToAnyPublisher()
+        if let delay = responseDelay, delay > 0 {
+            return Future { promise in
+                DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+                    promise(.success(response))
+                }
+            }.eraseToAnyPublisher()
+        } else {
+            return Just(response)
+                .setFailureType(to: RequestError.self)
+                .eraseToAnyPublisher()
+        }
     }
 }
