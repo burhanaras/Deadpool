@@ -16,18 +16,18 @@ Deadpool is a tvOS application built with SwiftUI that fetches Marvel characters
 - **Dependency injection** for testability and modularity.
 - No third-party libraries used, ensuring lightweight and customizability.
 
-## Screenshots
-
-![Screenshot 1](./screenshots/screenshot1.png)
-*Add descriptive caption here.*
-
-![Screenshot 2](./screenshots/screenshot2.png)
-*Add descriptive caption here.*
-
 ## Architecture Diagram
 
-![Architecture Diagram](./diagrams/architecture_diagram.png)
+![Architecture Diagram](./Screenshots/architecture.png)
 *Diagram illustrating the MVVM-C architecture with SwiftUI, Combine, and async-let.*
+
+## Screenshots
+
+![Screenshot 1](./Screenshots/ss0.png)
+*Marvel list.*
+
+![Screenshot 2](./Screenshots/ss1.png)
+*Marvel details.*
 
 ## Tests
 
