@@ -192,8 +192,8 @@
 				94D613822C3A77BC009DEF00 /* Coordinator */,
 				94D613072C39D51D009DEF00 /* Preview Content */,
 				94D613812C3A7721009DEF00 /* Resources */,
-				94D613572C39DD60009DEF00 /* UI */,
-				94D613662C3A17A0009DEF00 /* Views */,
+				94D613A22C3BCD28009DEF00 /* UI */,
+				94D613A12C3BCCE8009DEF00 /* Views */,
 			);
 			path = Deadpool;
 			sourceTree = "<group>";
@@ -210,9 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				94D613122C39D51D009DEF00 /* DeadpoolTests.swift */,
-				94D613932C3B269F009DEF00 /* Marvel Detail */,
+				94D613A92C3BCF41009DEF00 /* Marvel Detail */,
 				94D613922C3B25F7009DEF00 /* Marvel List */,
-				94D6138D2C3B25B2009DEF00 /* Mock */,
+				94D613A82C3BCF22009DEF00 /* Mock */,
 				94D613962C3B4D7F009DEF00 /* Model */,
 			);
 			path = DeadpoolTests;
@@ -231,21 +231,9 @@
 			isa = PBXGroup;
 			children = (
 				94D6133F2C39D825009DEF00 /* Model */,
-				94D6132C2C39D74C009DEF00 /* Network */,
+				94D613A42C3BCE31009DEF00 /* Network */,
 			);
 			path = DeadpoolShared;
-			sourceTree = "<group>";
-		};
-		94D6132C2C39D74C009DEF00 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				94D6134A2C39DACD009DEF00 /* NetworkLayer.swift */,
-				94D6134E2C39DB31009DEF00 /* NetworkLyer+Extension.swift */,
-				94D613442C39DA09009DEF00 /* DummyData */,
-				94D613522C39DC15009DEF00 /* DummyNetworkLayer */,
-				94D613492C39DA34009DEF00 /* Error */,
-			);
-			name = Network;
 			sourceTree = "<group>";
 		};
 		94D6132D2C39D752009DEF00 /* Model Objects */ = {
@@ -257,20 +245,10 @@
 			path = "Model Objects";
 			sourceTree = "<group>";
 		};
-		94D613362C39D7DB009DEF00 /* Data Transfer Objects */ = {
-			isa = PBXGroup;
-			children = (
-				94D613372C39D7E6009DEF00 /* ComicsResponse.swift */,
-				94D6133B2C39D804009DEF00 /* CharactersResponse.swift */,
-			);
-			name = "Data Transfer Objects";
-			path = ..;
-			sourceTree = "<group>";
-		};
 		94D6133F2C39D825009DEF00 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				94D613362C39D7DB009DEF00 /* Data Transfer Objects */,
+				94D613A72C3BCEC1009DEF00 /* Data Transfer Objects */,
 				94D6132D2C39D752009DEF00 /* Model Objects */,
 			);
 			path = Model;
@@ -284,32 +262,6 @@
 			path = DummyData;
 			sourceTree = "<group>";
 		};
-		94D613492C39DA34009DEF00 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				94D613402C39D9F3009DEF00 /* CommonError.swift */,
-			);
-			name = Error;
-			sourceTree = "<group>";
-		};
-		94D613522C39DC15009DEF00 /* DummyNetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */,
-			);
-			name = DummyNetworkLayer;
-			sourceTree = "<group>";
-		};
-		94D613572C39DD60009DEF00 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				94D6137F2C3A76E6009DEF00 /* Home */,
-				94D6135C2C39DD8B009DEF00 /* Marvel List */,
-				94D6135D2C39DDA8009DEF00 /* Mervel Details */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
 		94D6135C2C39DD8B009DEF00 /* Marvel List */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,34 +269,6 @@
 				94D6135E2C39DDCD009DEF00 /* MarvelListViewModel.swift */,
 			);
 			path = "Marvel List";
-			sourceTree = "<group>";
-		};
-		94D6135D2C39DDA8009DEF00 /* Mervel Details */ = {
-			isa = PBXGroup;
-			children = (
-				94D6136F2C3A5C0D009DEF00 /* MarvelDetailViewModel.swift */,
-				94D613732C3A5C66009DEF00 /* MarvelDetailScreen.swift */,
-			);
-			name = "Mervel Details";
-			sourceTree = "<group>";
-		};
-		94D613662C3A17A0009DEF00 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				94D613672C3A184B009DEF00 /* MarvelItemView.swift */,
-				94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */,
-				94D613772C3A5E7E009DEF00 /* ComicsItemView.swift */,
-				94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		94D6137F2C3A76E6009DEF00 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				94D613032C39D51A009DEF00 /* ContentView.swift */,
-			);
-			name = Home;
 			sourceTree = "<group>";
 		};
 		94D613802C3A7715009DEF00 /* App */ = {
@@ -371,29 +295,12 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		94D6138D2C3B25B2009DEF00 /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */,
-				94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */,
-			);
-			name = Mock;
-			sourceTree = "<group>";
-		};
 		94D613922C3B25F7009DEF00 /* Marvel List */ = {
 			isa = PBXGroup;
 			children = (
 				94D6138B2C3B1E91009DEF00 /* MarvelListViewModelTests.swift */,
 			);
 			path = "Marvel List";
-			sourceTree = "<group>";
-		};
-		94D613932C3B269F009DEF00 /* Marvel Detail */ = {
-			isa = PBXGroup;
-			children = (
-				94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */,
-			);
-			name = "Marvel Detail";
 			sourceTree = "<group>";
 		};
 		94D613962C3B4D7F009DEF00 /* Model */ = {
@@ -403,6 +310,98 @@
 				94D613992C3B4E9D009DEF00 /* ComicsTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		94D6139F2C3BCC57009DEF00 /* Marvel Details */ = {
+			isa = PBXGroup;
+			children = (
+				94D6136F2C3A5C0D009DEF00 /* MarvelDetailViewModel.swift */,
+				94D613732C3A5C66009DEF00 /* MarvelDetailScreen.swift */,
+			);
+			path = "Marvel Details";
+			sourceTree = "<group>";
+		};
+		94D613A12C3BCCE8009DEF00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94D613672C3A184B009DEF00 /* MarvelItemView.swift */,
+				94D6136B2C3A1955009DEF00 /* MarvelCarouselView.swift */,
+				94D613772C3A5E7E009DEF00 /* ComicsItemView.swift */,
+				94D6137B2C3A6284009DEF00 /* ComicsCarouselView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94D613A22C3BCD28009DEF00 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				94D613A32C3BCD5E009DEF00 /* Home */,
+				94D6139F2C3BCC57009DEF00 /* Marvel Details */,
+				94D6135C2C39DD8B009DEF00 /* Marvel List */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		94D613A32C3BCD5E009DEF00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94D613032C39D51A009DEF00 /* ContentView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		94D613A42C3BCE31009DEF00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				94D6134A2C39DACD009DEF00 /* NetworkLayer.swift */,
+				94D6134E2C39DB31009DEF00 /* NetworkLyer+Extension.swift */,
+				94D613442C39DA09009DEF00 /* DummyData */,
+				94D613A52C3BCE66009DEF00 /* DummyNetworkLayer */,
+				94D613A62C3BCE7B009DEF00 /* Error */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		94D613A52C3BCE66009DEF00 /* DummyNetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				94D613532C39DC33009DEF00 /* DummyNetworkLayer.swift */,
+			);
+			path = DummyNetworkLayer;
+			sourceTree = "<group>";
+		};
+		94D613A62C3BCE7B009DEF00 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				94D613402C39D9F3009DEF00 /* CommonError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		94D613A72C3BCEC1009DEF00 /* Data Transfer Objects */ = {
+			isa = PBXGroup;
+			children = (
+				94D613372C39D7E6009DEF00 /* ComicsResponse.swift */,
+				94D6133B2C39D804009DEF00 /* CharactersResponse.swift */,
+			);
+			path = "Data Transfer Objects";
+			sourceTree = "<group>";
+		};
+		94D613A82C3BCF22009DEF00 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				94D6138E2C3B25BF009DEF00 /* MockNetworkLayer.swift */,
+				94D6139B2C3B98E7009DEF00 /* DummyDataGenerator.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		94D613A92C3BCF41009DEF00 /* Marvel Detail */ = {
+			isa = PBXGroup;
+			children = (
+				94D613942C3B26C6009DEF00 /* MarvelDetailViewModelTests.swift */,
+			);
+			path = "Marvel Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
