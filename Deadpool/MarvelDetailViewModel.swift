@@ -8,13 +8,12 @@
 import Foundation
 import Combine
 
-class MarvelDetailViewModel: ObservableObject{
+class MarvelDetailViewModel: ObservableObject {
     @Published private(set) var data: Result<Marvel, CommonError>? = .none
     @Published private(set) var comics: [Comics] = [Comics]()
     @Published private(set) var isComicsLoading: Bool = false
     
     private var networkLayer: INetworkLayer
-    private var cancellables: Set<AnyCancellable> = []
     private var marvel: Marvel
     
     init(networkLayer: INetworkLayer, marvel: Marvel) {
@@ -23,28 +22,37 @@ class MarvelDetailViewModel: ObservableObject{
         self.data = .success(marvel)
     }
     
-    func loadMarvelDetail(){
-        subscribeToProductDetail(characterId: marvel.id)
+    @MainActor
+    func loadMarvelDetail() async {
+        await loadComics(characterId: marvel.id)
     }
     
-    private func subscribeToProductDetail(characterId: String) {
+    @MainActor
+    private func loadComics(characterId: String) async {
         self.isComicsLoading = true
-        networkLayer.getComicsOf(characterId: characterId)
-            .sink(receiveCompletion: {[weak self] completion in
-                switch completion{
-                case let .failure(error) where error == .malformedUrlError:
-                    self?.comics = [Comics]()
-                    self?.isComicsLoading = false
-                case .finished:
-                    self?.isComicsLoading = false
-                    break
-                default:
-                    self?.comics = [Comics]()
-                }
-            }, receiveValue: { [weak self] comicsResponse in
-                self?.comics = comicsResponse.data.results.map { Comics.fromDTO(dto: $0)}
-            })
-            .store(in: &cancellables)
+        do {
+            let comicsResponse = try await networkLayer.getComicsOf(characterId: characterId).async()
+            self.comics = comicsResponse.data.results.map { Comics.fromDTO(dto: $0) }
+            self.isComicsLoading = false
+        } catch {
+            self.comics = []
+            self.isComicsLoading = false
+        }
     }
 }
 
+extension AnyPublisher {
+    func async() async throws -> Output {
+        try await withCheckedThrowingContinuation { continuation in
+            var cancellable: AnyCancellable?
+            cancellable = self.sink { completion in
+                if case let .failure(error) = completion {
+                    continuation.resume(throwing: error)
+                }
+                cancellable?.cancel()
+            } receiveValue: { value in
+                continuation.resume(returning: value)
+            }
+        }
+    }
+}

@@ -21,17 +21,16 @@ struct MarvelDetailScreen: View {
                 ProgressView()
             }
         }
-        .onAppear {
-            viewModel.loadMarvelDetail()
+        .task {
+            await viewModel.loadMarvelDetail()
         }
     }
 }
 
 struct MarvelDetail: View {
-    
     @FocusState private var isButtonFocused: Bool
-    
     @ObservedObject var viewModel: MarvelDetailViewModel
+    
     let hero: Marvel
     
     var body: some View {

@@ -81,13 +81,13 @@ final class DeadpoolTests: XCTestCase {
     }
     
     //    MARK: - MarvelDetail Tests
-    func test_MarvelDetailViewModel_returns_correct_data() throws {
+    func test_MarvelDetailViewModel_returns_correct_data() async throws {
         // GIVEN: that we have a MarvelDTO and a NetworkLayer that returns that DTO for detail
         let networkLayer = TestNetworkLayer(charactersResponse: testCharactersResponse, comicsResponse: testComicsResponse)
         
         // WHEN: MarvelDetailViewModel's loadProductDetail() is called
         let viewModel = MarvelDetailViewModel(networkLayer: networkLayer, marvel: Marvel.fromDTO(dto: testMarvelDTO0))
-        viewModel.loadMarvelDetail()
+        await viewModel.loadMarvelDetail()
         
         // THEN: ViewModel's data should be same
         XCTAssertEqual(try viewModel.data?.get().id, String(testMarvelDTO0.id))
@@ -97,13 +97,13 @@ final class DeadpoolTests: XCTestCase {
         
     }
     
-    func test_MarvelDetailViewModel_returns_correct_data_for_Comics() {
+    func test_MarvelDetailViewModel_returns_correct_data_for_Comics() async throws {
         // GIVEN: that we have a ViewModel and a NetworkLayer that returns Comics objects
         let networkLayer = TestNetworkLayer(charactersResponse: testCharactersResponse, comicsResponse: testComicsResponse)
         let viewModel = MarvelDetailViewModel(networkLayer: networkLayer, marvel: Marvel.fromDTO(dto: testMarvelDTO0))
         
         // WHEN: MarvelDetailViewModel's loadProductDetail() is called
-        viewModel.loadMarvelDetail()
+        await viewModel.loadMarvelDetail()
         
         // THEN: ViewModel's comics data should be loaded
         XCTAssertEqual(viewModel.comics.count, testComicsResponse.data.results.count)
